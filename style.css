@@ -1,0 +1,89 @@
+.imgImg {
+    height: 400px;
+    width: 100%;
+    object-fit: cover
+}
+
+/* animations css */
+
+.container {
+    background-color: brown;
+}
+
+.child {
+    background-color: bisque;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    /* animation-name: anime2; */
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    /* animation-fill-mode: backwards; */
+    animation-timing-function: ease-in-out;
+    animation-delay: 3s;
+    /* animation-direction: reverse; */
+}
+
+@keyframes anime {
+    from {
+        width: 200px;
+    }
+
+    to {
+        width: 500px;
+    }
+}
+
+@keyframes anime2 {
+    0% {
+        top: 0px;
+        left: 0px;
+    }
+
+    25% {
+        top: 250px;
+        left: 0px;
+    }
+
+    50% {
+        top: 250px;
+        left: 250px;
+    }
+
+    75% {
+        top: 0px;
+        left: 250px;
+    }
+
+    100% {
+        top: 0px;
+        left: 0px;
+    }
+
+}
+
+.container2 {
+    background-color: beige;
+    padding: 30px;
+    margin-top: 100px;
+}
+
+.child2 {
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+
+    transition-duration: 2s;
+    transition-property: all;
+}
+
+.child2:hover {
+    background-color: black;
+    color: white;
+    font-size: 30px;
+
+}
